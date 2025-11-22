@@ -1,3 +1,7 @@
+import type { SOCIAL_PLATFORMS } from './constants';
+
+export type SocialPlatform = typeof SOCIAL_PLATFORMS[keyof typeof SOCIAL_PLATFORMS];
+
 export interface CatFact {
   fact: string;
   length: number;

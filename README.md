@@ -1,6 +1,6 @@
 # 🐱 Cat Facts App
 
-A beautiful, minimalist web application to discover and save interesting cat facts. Built with React, TypeScript, and Vite.
+A beautiful, minimalist web application to discover, save, and share interesting cat facts. Built with React, TypeScript, and Vite.
 
 ![Cat Facts App Screenshot](./public/screenshot.png)
 
@@ -9,11 +9,14 @@ A beautiful, minimalist web application to discover and save interesting cat fac
 - 🎲 **Discover Random Facts** - Get random interesting facts about cats from the Cat Facts API
 - ⭐ **Rate Facts** - Rate each fact from 1-5 stars based on how interesting you find it
 - 💾 **Save Favorites** - Save your favorite cat facts locally for later reading
+- 🔍 **Filter by Rating** - Filter your saved facts by star rating
+- 📤 **Share Facts** - Share facts via Facebook, Twitter, WhatsApp, or copy to clipboard
 - 📄 **Export to Text** - Export all your saved facts as a formatted text file
-- 🌙 **Dark Mode** - Toggle between light and dark themes
+- 🌙 **Dark Mode** - Toggle between light and dark themes with smooth transitions
 - 📱 **Fully Responsive** - Works perfectly on desktop, tablet, and mobile devices
 - 💨 **Fast & Lightweight** - Built with Vite for lightning-fast performance
-- 🎨 **Clean UI** - Minimalist design with smooth animations
+- 🎨 **Clean UI** - Minimalist design with smooth animations and custom scrollbars
+- 💾 **Persistent Storage** - All your data is saved locally using localStorage
 
 ## 🚀 Demo
 
@@ -101,21 +104,39 @@ cat-facts-app/
 
 ## 🎨 Features in Detail
 
-### Dark Mode
-Toggle between light and dark themes with a single click. Your preference is saved locally.
+### Dark Mode 🌙
+Toggle between light and dark themes with a single click. Your preference is saved locally and persists across sessions. Smooth color transitions throughout the app.
 
-### Rating System
-Rate each fact from 1-5 stars. Your ratings are saved with each fact.
+### Rating System ⭐
+Rate each fact from 1-5 stars. Your ratings are saved with each fact. Stars have visible borders and smooth hover effects.
 
-### Local Storage
-All your saved facts and theme preference are stored in your browser's localStorage, so they persist across sessions.
+### Filter by Rating 🔍
+Custom dropdown menu to filter saved facts by star rating. Beautifully animated with smooth transitions. Shows star icons matching your theme colors.
 
-### Export Functionality
+### Social Sharing 📤
+Share your favorite cat facts easily:
+- **Copy to Clipboard** - One-click copy (works everywhere)
+- **Native Share** - Mobile devices get native share menu
+- **Facebook, Twitter (X), WhatsApp** - Direct sharing buttons
+- No URLs in shared text - just the clean cat fact
+
+### Local Storage 💾
+All your saved facts, ratings, and theme preference are stored in your browser's localStorage, so they persist across sessions. No account or login required!
+
+### Export Functionality 📄
 Export all your saved facts as a nicely formatted text file with:
 - Fact text
-- Star ratings
+- Star ratings (displayed as ⭐)
 - Date saved
 - Total count
+- Export timestamp
+
+### Custom Scrollbars 🎨
+Beautiful custom scrollbars that match your theme:
+- Accent color scrollbar thumb
+- Smooth hover effects
+- Rounded corners
+- Works in both light and dark mode
 
 ## 🤝 Contributing
 
@@ -139,12 +160,14 @@ Project Link: [https://github.com/VawnDyu/cat-facts-app](https://github.com/Vawn
 
 - None at the moment! Feel free to report issues on GitHub.
 
-## 🔮 Future Enhancements
+## 🔮 Roadmap
 
+- [x] Dark mode
+- [x] Filter by rating
+- [x] Social media sharing
 - [ ] Search functionality for saved facts
-- [ ] Filter by rating
-- [ ] Share facts on social media
-- [ ] Multiple categories of facts
+- [ ] Sort saved facts by date/rating
+- [ ] Fact categories
 - [ ] Fact of the day notification
 
 ---

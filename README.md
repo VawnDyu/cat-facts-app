@@ -86,20 +86,43 @@ The built files will be in the `dist` directory.
 ## 📁 Project Structure
 ```
 cat-facts-app/
-├── src/
-│   ├── App.tsx          # Main component
-│   ├── App.css          # Styles
-│   ├── types.ts         # TypeScript interfaces
-│   └── utils/
-│       ├── theme.ts     # Theme configuration
-│       ├── storage.ts   # localStorage utilities
-│       └── export.ts    # Export functionality
-├── public/
+├── .gitignore
+├── CONTRIBUTING.md
+├── eslint.config.js
 ├── index.html
+├── LICENSE
+├── package-lock.json
 ├── package.json
+├── public/
+│   ├── favicon.svg
+│   └── screenshot.png
+├── README.md
+├── src/
+│   ├── App.css
+│   ├── App.tsx
+│   ├── components/
+│   │   ├── EmptyState.tsx
+│   │   ├── FactCard.tsx
+│   │   ├── FilterDropdown.tsx
+│   │   ├── RatingStars.tsx
+│   │   └── ShareDropdown.tsx
+│   ├── constants/
+│   │   └── index.ts
+│   ├── hooks/
+│   │   ├── useFactManagement.ts
+│   │   └── useTheme.ts
+│   ├── main.tsx
+│   ├── types.ts
+│   └── utils/
+│       ├── animations.ts
+│       ├── export.ts
+│       ├── shareUtils.ts
+│       ├── storage.ts
+│       └── theme.ts
+├── tsconfig.app.json
 ├── tsconfig.json
-├── vite.config.ts
-└── README.md
+├── tsconfig.node.json
+└── vite.config.ts
 ```
 
 ## 🎨 Features in Detail
